@@ -1230,7 +1230,7 @@ function countWord() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('button.button').addEventListener('click', handleClick);
+    document.querySelector('#modal-submit-button').addEventListener('click', handleClick);
 
 });
 
@@ -1780,7 +1780,7 @@ function handleClick() {
                 //Send a POST request containing the form elements object  
                 $.post("/", newObject, function(data, status, xhr) {
                     alert("Alert Submitted");
-                    $(location).attr('href', '/test');
+                    $(location).attr('href', '/');
                 });
             }
         }
